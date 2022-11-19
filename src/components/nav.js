@@ -6,17 +6,17 @@ const Nav = ({ fastType, mode, onToggle }) => (
   <nav className="nav">
     <Toggle
       checked={fastType}
-      leftLabel="Normal type speed"
+      leftLabel="Tipado normal"
       name="fastType"
       onChange={onToggle}
-      rightLabel="Fast type speed"
+      rightLabel="Tipado rápido"
     />
     <Toggle
       checked={mode}
-      leftLabel="Light Mode"
+      leftLabel="Modo Claro"
       name="dark"
       onChange={onToggle}
-      rightLabel="Dark Mode"
+      rightLabel="Modo Oscuro"
     />
   </nav>
 );

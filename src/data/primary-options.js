@@ -1,5 +1,5 @@
 const options = [
-  { value: 'add', label: 'add' },
+  { value: 'add', label: 'añadir' },
   { value: 'commit', label: 'commit' },
   { value: 'revert', label: 'revert/reset' },
   { value: 'initialize', label: 'initialize' },

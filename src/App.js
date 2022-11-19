@@ -149,14 +149,14 @@ class App extends Component {
             <div className="row">
               <div className="col-5">
                 <h2 className="content__title  dark-white">
-                  Git <span>Command</span> Explorer
+                  Explorador de <span>Comandos</span> de Git
                 </h2>
                 <p className="content__subtitle dark-grey">
-                  Find the right commands you need without digging through the web.
+                  Encuentre los comandos correctos que necesita sin buscar en la web.
                 </p>
 
                 <div className="options">
-                  <h4 className="options__title">I want to:</h4>
+                  <h4 className="options__title">Deseo:</h4>
 
                   <Select
                     placeholder="..."
@@ -197,7 +197,7 @@ class App extends Component {
                 <div
                   className={`board__group board__group--1 ${isMobile && !usage ? ' d-none' : ''}`}
                 >
-                  <h2 className="board__title  dark-white">Usage</h2>
+                  <h2 className="board__title  dark-white">Uso:</h2>
                   <div className="board board--1">
                     <pre>
                       {usage.length ? (
@@ -211,7 +211,7 @@ class App extends Component {
                     {usage.length ? (
                       <div className="copy">
                         <span className={`copy__popover ${copied ? 'show' : ''}`}>
-                          command copied
+                          comando copiado
                         </span>
                         <img
                           className="copy__image"
@@ -225,7 +225,7 @@ class App extends Component {
 
                   {nb ? (
                     <div className="board__group board__group--2">
-                      <h2 className="board__title  dark-white">Note</h2>
+                      <h2 className="board__title  dark-white">Nota</h2>
                       <div className="board board--2">
                         <pre>
                           <Typist avgTypingDelay={avgTypingDelay} cursor={{ show: false }}>

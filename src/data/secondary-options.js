@@ -2,31 +2,31 @@ export const secondaryOptions = {
   commit: [
     {
       value: 'local-changes',
-      label: 'commit all local changes in tracked files',
+      label: 'commit para todos los cambios locales en los archivos con seguimiento.',
       usage: 'git commit -a'
     },
     {
       value: 'staged-changes',
-      label: 'commit all staged changes',
-      usage: 'git commit -m <message>',
-      nb: 'Replace <message> with your commit message.'
+      label: 'commit para todos los cambios añadidos y en seguimiento.',
+      usage: 'git commit -m <mensaje>',
+      nb: 'Reemplace <mensaje> con un mensaje de tu commit.'
     }
   ],
 
   configure: [
     {
       value: 'email-name',
-      label: 'name and email address',
+      label: 'nombre y dirección de correo',
       usage:
-        'git config --global user.name "username" \n\ngit config --global user.email "email address"',
+        'git config --global user.name "username" \n\ngit config --global user.email "tu_email"',
       nb:
-        'Your username and email address should be the same as the one used with your git hosting provider i.e. github, bitbucket, gitlab etc'
+        'Tu nombre de usuario y correo debe ser el mismo que el que utilizas con tu proveedor de alojamiento de git, ejemplo: github, bitbucket, gitlab, etc.'
     },
     {
       value: 'editor',
-      label: 'default editor',
-      usage: 'git config --global core.editor "vim"',
-      nb: 'Change default editor to vim.'
+      label: 'editor por defecto',
+      usage: 'git config --global core.editor "tu_editor_preferido"',
+      nb: 'Cambia tu_editor_preferido por la aplicación que más utilices para editar, ejemplo: vim, code, geany, etc.'
     },
     {
       value: 'diff-tool',
@@ -274,36 +274,36 @@ export const secondaryOptions = {
   add: [
     {
       value: 'new-changes',
-      label: 'new changes',
-      usage: 'git add <file.ext>',
+      label: 'nuevos cambios',
+      usage: 'git add <archivo.ext>',
       nb:
-        'To add all the files in the current directory, use "git add ."\n\nTo add a directory use "git add <directory>"'
+        'Para añadir todos los archivos en esta carpeta, use "git add ."\n\nPara añadir una carpeta use "git add <carpeta>"'
     },
     {
       value: 'add-new-branch',
-      label: 'a new branch'
+      label: 'una nueva rama'
     },
     {
       value: 'add-repo',
-      label: 'new remote repo',
+      label: 'un nuevo repositorio remoto',
       usage: 'git remote add <shortname> <url>'
     },
     {
       value: 'add-alias',
       label: 'alias',
-      usage: 'git config --global alias.<alias> <command>',
+      usage: 'git config --global alias.<alias> <comando>',
       nb:
-        'e.g. git config --global alias.st status. Typing git st in the terminal now does the same thing as git status'
+        'e.j. git config --global alias.st status. Escribiendo "git st" en el terminal, ahora hará lo mismo que: "git status".'
     },
     {
       value: 'add-annotated-tag',
-      label: 'annotated tag',
-      usage: 'git tag -a v1.4 -m "my version 1.4"\n\ngit push --tags'
+      label: 'etiqueta anotada (annotated tag)',
+      usage: 'git tag -a v1.4 -m "mi versión 1.4"\n\ngit push --tags'
     },
     {
       value: 'add-annotated-tag-for-old-commit',
-      label: 'annotated tag for old commit',
-      usage: "git tag -a v1.2 -m 'version 1.2' <commit-hash>\n\ngit push --tags"
+      label: 'etiqueta anotada para commits antiguos',
+      usage: "git tag -a v1.2 -m 'versión 1.2' <commit-hash>\n\ngit push --tags"
     }
   ],
 
